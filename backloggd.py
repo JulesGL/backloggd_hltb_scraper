@@ -35,7 +35,7 @@ def save_to_csv(game_list, file_name="backloggd_games.csv"):
     print(f"Saved {len(game_list)} games to {file_name}")
 
 if __name__ == "__main__":
-    USERNAME = "YOUR_USERNAME"  
-    games = fetch_backlog(USERNAME,max_page=5)
+    USERNAME = ""  
+    games = fetch_backlog(USERNAME,max_page=9)
     if games:
         save_to_csv(games)
