@@ -1,2 +1,4 @@
 # Ignore the datasets
-*.csv
+*.csv*
+*.txt
+*.env

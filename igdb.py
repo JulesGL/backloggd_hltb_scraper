@@ -47,7 +47,7 @@ def update_csv_with_igdb(csv_file):
     
     df["IGDB Keywords"] = df["Game Title"].apply(lambda title: fetch_igdb_keywords(title, token))
     
-    updated_file = "backloggd_games_igdb.csv"
+    updated_file = "backloggd_games.csv"
     df.to_csv(updated_file, index=False)
     print(f"Updated CSV saved as: {updated_file}")
 
